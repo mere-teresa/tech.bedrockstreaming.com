@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,8 +69,8 @@
     
     
 
-    <!-- seo tags -->
-    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <!-- SEO tags -->
+    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     
     <meta property="og:type" content="website" />
     
@@ -71,7 +88,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bedrock Tech Blog" />
 <script type="application/ld+json">
-{"name":"Bedrock Tech Blog","url":"https://tech.bedrockstreaming.com/","@type":"WebSite","headline":"Bedrock Tech Blog","description":"Blog technique de Bedrock","@context":"https://schema.org"}</script>
+{"name":"Bedrock Tech Blog","description":"Blog technique de Bedrock","headline":"Bedrock Tech Blog","url":"https://tech.bedrockstreaming.com/","@type":"WebSite","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -84,7 +101,7 @@
     <meta name="twitter:description" content="Creating Streaming Champions">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     <meta name="twitter:image:alt" content="Bedrock Tech Blog">
 </head>
 
@@ -95,7 +112,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -114,16 +131,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -339,30 +346,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -378,17 +361,17 @@
     <style scoped>
         
         .call-out_img {
-            background-image: url('/images/banner_xl.jpg');
+            background-image: url('/images/common/banner_xl.jpg');
         }
         
         @media screen and (max-width: 768px) {
             .call-out_img {
-                background-image: url('/images/banner_xl-medium.jpg');
+                background-image: url('/images/common/banner_xl-medium.jpg');
             }
         }
         @media screen and (max-width: 576px) {
             .call-out_img {
-                background-image: url('/images/banner_xl-small.jpg');
+                background-image: url('/images/common/banner_xl-small.jpg');
             }
         }
         
@@ -402,62 +385,67 @@
     
     <div class="post-teaser">
         
-        <span>
-          <header>
-            <h1>
-              <a aria-label="Comment appliquer automatiquement des modifications sur une codebase JS 🤖" class="post-link" href="/refactorer-avec-jscodeshift">
-                Comment appliquer automatiquement des modifications sur une codebase JS 🤖
-              </a>
-            </h1>
-            
-
-
-<div class="post-info"><a href="https://github.com/martinschneider01" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/m_schneider.png">
-    
-    <p class="meta">
-      Martin SCHNEIDER - 
-      
-      July 26, 2022
-    </p></a></div>
-
-          </header>
-          
-              <div class="excerpt">
-                  
-                     Dans cet article, je vais vous présenter JSCodeshift, une libraire qui va vous permettre d’analyser et appliquer automatiquement des modifications sur du code Javascript ou Typescript.
-
-                  
-              </div>
-          
-      </span>
-    </div>
-    
-    <div class="post-teaser">
+        <div class="post-img">
+            <a aria-label="QCon London 2024" href="/2024/04/17/qcon-london-2024.html">
+                <img alt="QCon London 2024" src="/images/posts/2024-04-17-qcon-london-2024/2024-04-09-Qcon-London-arrival.jpg">
+            </a>
+        </div>
         
         <span>
           <header>
             <h1>
-              <a aria-label="Bedrock Dev Facts #17" class="post-link" href="/2022/07/22/bedrock-dev-facts-17.html">
-                Bedrock Dev Facts #17
+              <a aria-label="QCon London 2024" class="post-link" href="/2024/04/17/qcon-london-2024.html">
+                QCon London 2024
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info">
-    <p class="meta">
-      Bedrock - 
-      
-      July 22, 2022
-    </p></div>
+<span class="author">
+
+    
+      <span class="name">
+        Coraline Petit
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Jérôme Foray
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://twitter.com/vgallissot"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Vincent Gallissot
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    April 17, 2024
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     L’été arrive, les vacances, le repos.
-Et vu les derniers devfacts des équipes Bedrock, il semblerait qu’il soit temps.
+                     <p>We really enjoyed this <a href="https://qconlondon.com/">QCon conference in London</a>. It’s based on 5 tracks a day, covering resilience, scalability, architecture, monitoring, performance, management and all the subjects that speak to tech companies. None of these tracks are sponsored: they’re all about feedback, with no marketing whatsoever. There is a 6th track where sponsorship is permitted, and it’s the only one. There aren’t many sponsorship stands, and you go to this conference to talk to your peers first and foremost.</p>
 
                   
               </div>
@@ -468,35 +456,120 @@ Et vu les derniers devfacts des équipes Bedrock, il semblerait qu’il soit tem
     <div class="post-teaser">
         
         <div class="post-img">
-            <a aria-label="Encrypt AWS AMIs: one way to do it wrong" href="/2022/07/08/encrypt-aws-amis.html">
-                <img alt="Encrypt AWS AMIs: one way to do it wrong" src="/images/posts/2022-07-08-encrypt-aws-amis/encrypt-aws-amis.png">
+            <a aria-label="KubeCon Europe 2024, Paris" href="/2024/04/09/kubecon-europe-2024.html">
+                <img alt="KubeCon Europe 2024, Paris" src="/images/posts/2024-04-09-kubecon-europe-2024/bienvenue-kubecon.jpeg">
             </a>
         </div>
         
         <span>
           <header>
             <h1>
-              <a aria-label="Encrypt AWS AMIs: one way to do it wrong" class="post-link" href="/2022/07/08/encrypt-aws-amis.html">
-                Encrypt AWS AMIs: one way to do it wrong
+              <a aria-label="KubeCon Europe 2024, Paris" class="post-link" href="/2024/04/09/kubecon-europe-2024.html">
+                KubeCon Europe 2024, Paris
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/TanguyFalconnet" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/t_falconnet.jpg">
+<a
+      href="https://github.com/chubchubsancho"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
     
-    <p class="meta">
-      Tanguy Falconnet - 
-      
-      July 08, 2022
-    </p></a></div>
+      <span class="name">
+        Grégory SANCHEZ
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://twitter.com/julien_menan"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/j_menan.jpg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Julien Menan
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://www.linkedin.com/in/laurent-caillet/"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/l_caillet.jpg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Laurent Caillet
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://twitter.com/pascal_martin"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Pascal Martin
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://github.com/Eriwyr"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Valentin Chabrier
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://github.com/valentinpelus"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Valentin Pelus
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    April 09, 2024
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     At Bedrock, we build our own privately shared AMIs (Amazon Machine Images) for different parts of our stack: kubernetes platform, vod platform, etc. We build those AMIs to optimize kernel parameters,to embed some tools, and more. We have been using Packer for a couple of years, and everything has been working just fine.
+                     <p>Two weeks ago, six of us were at KubeCon in Paris. For a few, it was their first KubeCon! For one, it was the fourth one. Since Copenhagen in 2018, which was before we started <a href="https://leanpub.com/tci/">moving to AWS and Kubernetes</a>, so much has changed – and so much has not ;-)</p>
 
                   
               </div>
@@ -509,27 +582,309 @@ Et vu les derniers devfacts des équipes Bedrock, il semblerait qu’il soit tem
         <span>
           <header>
             <h1>
-              <a aria-label="Debugging and reviewing your Android dependencies with apktool" class="post-link" href="/2022/06/20/android-apktool-decompiling.html">
-                Debugging and reviewing your Android dependencies with apktool
+              <a aria-label="Mon premier jeu sur BGA #LFT 02/02/24" class="post-link" href="/mon-premier-jeu-sur-bga">
+                Mon premier jeu sur BGA #LFT 02/02/24
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://github.com/outadoc" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="https://s.gravatar.com/avatar/c638445b4e00f76960bf7ee2275d7014?s=80">
+<a
+      href="https://oliver-thebault.com"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/o_thebault.png" class="thumbnail">
     
-    <p class="meta">
-      Baptiste Candellier - 
-      
-      June 20, 2022
-    </p></a></div>
+
+    
+      <span class="name">
+        Oliver Thébault
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    February 02, 2024
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     If you maintain an Android application, you might be relying on performance monitoring SDKs like Firebase Performance or New Relic, to name a couple. These plugins usually have a light setup process—just apply a Gradle plugin, and they provide the ability to collect statistics about every network call and database query in your app automatically.
+                     <blockquote>
+  <p>Introduction au jeu de société Velonimo et à la plateforme de jeux en ligne Board Game Arena, suivie d’un retour d’expérience de l’implémentation de ce jeu sur cette plateforme en tant que développeur Web.</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Le LFT du LFT - PUB LFT #LFT 02/02/24" class="post-link" href="/le-lft-du-lft">
+                Le LFT du LFT - PUB LFT #LFT 02/02/24
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        LFTeam
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    February 02, 2024
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>Comment aider les LFTs ?</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Le leader imposteur #LFT 02/02/24" class="post-link" href="/le-leader-imposteur">
+                Le leader imposteur #LFT 02/02/24
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://twitter.com/mathieumure"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Mathieu Mure
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    February 02, 2024
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>Je ne suis <strong>pas expert</strong> de mon métier et ce n’est pas parce que j’en parle facilement que je pense le devenir un jour.
+Je n’ai jamais su être un leader, et tous les <strong>leaders m’impressionnent</strong>.
+Je pense que <strong>les autres sont meilleurs</strong> que moi et que je ne pourrai pas être leur égal.
+J’ai été nommé <strong>par chance</strong> à un poste de <strong>leader</strong> alors que je n’en avais pas la légitimité.
+Et…je n’ai <strong>jamais eu confiance en moi</strong> (j’aurais peut-être du commencer par ça)</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Du code à l'image : Aller et Retour #LFT 02/02/24" class="post-link" href="/du-code-a-l-image-aller-et-retour">
+                Du code à l'image : Aller et Retour #LFT 02/02/24
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+      <img alt="Author's avatar" src="/images/avatar/e_doyon.jpeg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Etienne Doyon
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    February 02, 2024
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>Pourquoi l’intelligence artificielle doit-elle s’entraîner pour devenir meilleure, et comment fait-elle ? C’est quoi un réseau de neurones ? Comment Dall-E arrive-t-il à dessiner de si belles images ?</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Comment j'ai retrouvé le sens de la vie grâce à WebAssembly #LFT 02/02/24" class="post-link" href="/comment-j-ai-retrouve-le-sens-de-la-vie-grace-a-web-assembly">
+                Comment j'ai retrouvé le sens de la vie grâce à WebAssembly #LFT 02/02/24
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Théo Gianella
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    February 02, 2024
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>Le jeu de la vie est un drôle de jeu qui a la particularité de n’avoir pas de joueur. Il se joue de lui-même et produit des configurations qui semblent évoluer de manière autonome, sans intervention extérieure. A partir de règles très basiques, des structures d’une très grande complexité peuvent émerger d’une manière qui évoque l’apparition de la vie sur Terre à partir d’éléments inertes, d’où le nom mystérieux de jeu de la vie.</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Au-delà des industries : Le pouvoir de l'état d'esprit #LFT 02/02/24" class="post-link" href="/au-dela-des-industries-le-pouvoir-de-l-etat-d-esprit">
+                Au-delà des industries : Le pouvoir de l'état d'esprit #LFT 02/02/24
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Serge Menassa
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    February 02, 2024
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>Je souhaite explorer l’idée selon laquelle le succès n’est pas défini par une industrie, une discipline ou un secteur spécifique, mais repose plutôt sur notre état d’esprit. À travers mes expériences personnelles variées - en cosmétique, marketing, e-commerce, ainsi que dans le domaine des bars, restaurants et de l’industrie - je mets en avant l’idée que les principes du succès sont universels. Cette présentation souligne l’importance de la mentalité, de la persévérance, des stratégies adoptées et d’une méthode, indépendamment du secteur professionnel. 
+L’objectif est d’inspirer et de redéfinir la perception du succès, en dépassant les barrières spécifiques à chaque domaine.</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Journal de l'alternant - Comment j'ai perdu mes dépendances pnpm" class="post-link" href="/2024/01/10/journal-de-l-alternant-comment-jai-perdu-mes-dependences-pnpm.html">
+                Journal de l'alternant - Comment j'ai perdu mes dépendances pnpm
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://github.com/jpoissonnet"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/j_poissonnet.jpg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Jules Poissonnet
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    January 10, 2024
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>À Bedrock, on m’a chargé de faire un POC (<a href="https://fr.wikipedia.org/wiki/Preuve_de_concept">proof of concept</a>) pour tester les avantages et les limites d’un double run entre notre app côté web (sur <a href="https://tech.bedrockstreaming.com/2017/05/17/spa-mode-isomorphism-js.html">une base maison React Server Side Rendering</a>) en déléguant des pages progressivement vers une app <a href="https://nextjs.org/">Next.js</a>. Étant tout nouveau dans le dev et encore plus nouveau sur le projet, ma vie ces derniers temps est une suite d’obstacles, d’essais, d’erreurs et de triomphes (pas toujours, mais souvent) bien mérités. Je suis habitué à faire des erreurs plus lunaires les unes que les autres, mais je vais m’attarder dans cet article sur une erreur qui m’a retourné le cerveau. Au menu : erreurs soudaines, dépendances disparues et désespoir… Bonne lecture.</p>
 
                   
               </div>
@@ -540,37 +895,108 @@ Et vu les derniers devfacts des équipes Bedrock, il semblerait qu’il soit tem
     <div class="post-teaser">
         
         <div class="post-img">
-            <a aria-label="Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…" href="/2022/06/16/kubecon-2022-part-4.html">
-                <img alt="Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…" src="/images/posts/2022-06-13-kubecon-2022/part4.jpg">
+            <a aria-label="Bedrock aux API Days Paris (2023)" href="/api-days-paris-2023">
+                <img alt="Bedrock aux API Days Paris (2023)" src="/images/posts/api-days-paris-2023/welcome-to-api-days-paris.png">
             </a>
         </div>
         
         <span>
           <header>
             <h1>
-              <a aria-label="Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…" class="post-link" href="/2022/06/16/kubecon-2022-part-4.html">
-                Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…
+              <a aria-label="Bedrock aux API Days Paris (2023)" class="post-link" href="/api-days-paris-2023">
+                Bedrock aux API Days Paris (2023)
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info">
-    <p class="meta">
-      Bedrock - 
-      
-      June 16, 2022
-    </p></div>
+<span class="author">
+
+    
+      <span class="name">
+        Guillaume Bouyge
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Jérôme Hardeman
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Kelly Phan
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Nicolas Alscher
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://oliver-thebault.com"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/o_thebault.png" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Oliver Thébault
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Orann Weber
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Thierry Geindre
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    December 20, 2023
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Pour terminer cette série, un ou deux sujets divers que nous n’avons pas regroupé dans les trois articles précédents
-(les performances applicatives et la scalabilité, 
-les performances bas niveau, le système et le réseau,
-la dev XP, l’outillage, la CI/CD et l’observabilité), 
-puis une conclusion globale avec ce que nous avons retenu de cette KubeCon Europe 2022.
+                     <p>Cette année Bedrock a envoyé 7 de ses collaborateurs et collaboratrices (i.e. nous, les auteurs de cet article) à l’édition 2023 des conférences “API Days” à Paris.</p>
 
                   
               </div>
@@ -595,7 +1021,7 @@ puis une conclusion globale avec ce que nous avons retenu de cette KubeCon Europ
     </div>
 
     <div class="page_number">
-        1 / 37
+        1 / 29
     </div>
 
     <div class="next">
@@ -610,7 +1036,7 @@ puis une conclusion globale avec ce que nous avons retenu de cette KubeCon Europ
         
         <!-- >> -->
         <a aria-label="Next"
-        href="/blog/page37" class="button">
+        href="/blog/page29" class="button">
             <span><i class="fas fa-angle-double-right"></i></span>
         </a>
         
@@ -761,6 +1187,22 @@ puis une conclusion globale avec ce que nous avons retenu de cette KubeCon Europ
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

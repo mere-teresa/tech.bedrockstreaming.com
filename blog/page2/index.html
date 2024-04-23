@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,13 +69,13 @@
     
     
 
-    <!-- seo tags -->
-    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <!-- SEO tags -->
+    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     
     <meta property="og:type" content="website" />
     
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 2 of 37 for Bedrock Tech Blog | Blog technique de Bedrock</title>
+<title>Page 2 of 29 for Bedrock Tech Blog | Blog technique de Bedrock</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Bedrock Tech Blog" />
 <meta property="og:locale" content="en_US" />
@@ -72,7 +89,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bedrock Tech Blog" />
 <script type="application/ld+json">
-{"url":"https://tech.bedrockstreaming.com/blog/page2/","@type":"WebPage","headline":"Bedrock Tech Blog","description":"Blog technique de Bedrock","@context":"https://schema.org"}</script>
+{"description":"Blog technique de Bedrock","headline":"Bedrock Tech Blog","url":"https://tech.bedrockstreaming.com/blog/page2/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -85,7 +102,7 @@
     <meta name="twitter:description" content="Creating Streaming Champions">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     <meta name="twitter:image:alt" content="Bedrock Tech Blog">
 </head>
 
@@ -96,7 +113,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -115,16 +132,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -343,30 +350,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -382,17 +365,17 @@
     <style scoped>
         
         .call-out_img {
-            background-image: url('/images/banner_xl.jpg');
+            background-image: url('/images/common/banner_xl.jpg');
         }
         
         @media screen and (max-width: 768px) {
             .call-out_img {
-                background-image: url('/images/banner_xl-medium.jpg');
+                background-image: url('/images/common/banner_xl-medium.jpg');
             }
         }
         @media screen and (max-width: 576px) {
             .call-out_img {
-                background-image: url('/images/banner_xl-small.jpg');
+                background-image: url('/images/common/banner_xl-small.jpg');
             }
         }
         
@@ -407,36 +390,58 @@
     <div class="post-teaser">
         
         <div class="post-img">
-            <a aria-label="Bedrock à la Kubecon 2022, 3ème partie : Dev XP, outillage, CI/CD, observabilité…" href="/2022/06/15/kubecon-2022-part-3.html">
-                <img alt="Bedrock à la Kubecon 2022, 3ème partie : Dev XP, outillage, CI/CD, observabilité…" src="/images/posts/2022-06-13-kubecon-2022/part3.jpg">
+            <a aria-label="Bedrock at 2023 AWS re:Invent Las Vegas" href="/2023/12/18/aws-reinvent-lasvegas-2023.html">
+                <img alt="Bedrock at 2023 AWS re:Invent Las Vegas" src="/images/posts/2023-12-18-aws-reinvent-lasvegas-2023/aws-reinvent-2023-cover.jpeg">
             </a>
         </div>
         
         <span>
           <header>
             <h1>
-              <a aria-label="Bedrock à la Kubecon 2022, 3ème partie : Dev XP, outillage, CI/CD, observabilité…" class="post-link" href="/2022/06/15/kubecon-2022-part-3.html">
-                Bedrock à la Kubecon 2022, 3ème partie : Dev XP, outillage, CI/CD, observabilité…
+              <a aria-label="Bedrock at 2023 AWS re:Invent Las Vegas" class="post-link" href="/2023/12/18/aws-reinvent-lasvegas-2023.html">
+                Bedrock at 2023 AWS re:Invent Las Vegas
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info">
-    <p class="meta">
-      Bedrock - 
-      
-      June 15, 2022
-    </p></div>
+<span class="author">
+      <img alt="Author's avatar" src="/images/avatar/a_ferez.jpg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Amélie Ferez
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://github.com/Eriwyr"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Valentin Chabrier
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    December 18, 2023
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Pour notre troisième article de cette série sur ce que nous avons retenu de la KubeCon Europe 2022, après 
-les performances applicatives et la scalabilité et 
-les performances bas niveau, le système et le réseau, 
-passons à la Developper eXperience, à l’outillage, à la CI/CD, aux rollback, à l’observabilité et aux incidents !
+                     <p>AWS re:Invent 2023 was a showcase for GenAI. It was the announcement of Amazon Q, Amazon’s new AI assistant, that attracted the most interest, designed to meet the specific needs of businesses.</p>
 
                   
               </div>
@@ -447,34 +452,291 @@ passons à la Developper eXperience, à l’outillage, à la CI/CD, aux rollback
     <div class="post-teaser">
         
         <div class="post-img">
-            <a aria-label="Bedrock à la Kubecon 2022, 2nde partie : performances, système et réseau" href="/2022/06/14/kubecon-2022-part-2.html">
-                <img alt="Bedrock à la Kubecon 2022, 2nde partie : performances, système et réseau" src="/images/posts/2022-06-13-kubecon-2022/main.jpg">
+            <a aria-label="Android 14 is out" href="/2023/12/05/android-14.html">
+                <img alt="Android 14 is out" src="/images/posts/2023-12-05-android-14/header.png">
             </a>
         </div>
         
         <span>
           <header>
             <h1>
-              <a aria-label="Bedrock à la Kubecon 2022, 2nde partie : performances, système et réseau" class="post-link" href="/2022/06/14/kubecon-2022-part-2.html">
-                Bedrock à la Kubecon 2022, 2nde partie : performances, système et réseau
+              <a aria-label="Android 14 is out" class="post-link" href="/2023/12/05/android-14.html">
+                Android 14 is out
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info">
-    <p class="meta">
-      Bedrock - 
-      
-      June 14, 2022
-    </p></div>
+<span class="author">
+
+    
+      <span class="name">
+        Cédric Goffoy
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    December 05, 2023
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Pour ce second article de synthèse de la KubeCon Europe 2022, continuons sur le thème des performances, peut-être plus bas niveau,
-et plongeons aussi dans des outils pouvant être déployés au cœur de nos clusters !
+                     <p>Here’s what it means for users and developers.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="STOP à l'espionnage ! Comment disparaître d'internet ? #LFT 24/11/23" class="post-link" href="/stop-a-l-espionnage-comment-disparaitre-d-internet">
+                STOP à l'espionnage ! Comment disparaître d'internet ? #LFT 24/11/23
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Etienne Idoux
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://twitter.com/CruuzAzul"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/m_alves.jpg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Mickael Alves
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    November 24, 2023
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>Vous en avez marre de vous sentir traqué sur Internet ? 😒 Nous aussi ! Mais est-il réellement possible de nos jours de devenir un véritable ninja digital ? 🥷🏻 Et si pour protéger votre vie privée en ligne, il fallait tout d’abord comprendre qui a accès à vos données et ce qu’ils peuvent faire avec ?</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Le futur du web est sur la périphérie du réseau #LFT 24/11/23" class="post-link" href="/le-futur-du-web-est-sur-la-peripherie-du-reseau">
+                Le futur du web est sur la périphérie du réseau #LFT 24/11/23
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Julien Sulpis
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    November 24, 2023
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>Le mot est apparu sur toutes les documentations ces derniers mois : les cloud providers comme Vercel, Netlify ou AWS proposent leur version des “Edge Functions”, alors que les frameworks Javascript comme Next, Nuxt ou encore Astro mettent en avant leur support des “Edge API Routes” ou du “SSR on the Edge”. Mais qu’est-ce donc que tout cela ?</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Jeux vidéo, websocket et binaire: temps réel efficace pour navigateur #LFT 24/11/23" class="post-link" href="/jeux-video-websocket-et-binaire-temps-reel-efficace-pour-navigateur">
+                Jeux vidéo, websocket et binaire: temps réel efficace pour navigateur #LFT 24/11/23
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Thomas Jarrand
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    November 24, 2023
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>Connaissez vous les websockets ? La techno idéale pour coder des expériences temps réel dans le navigateur et que j’utilise dans tout mes projets collaboratifs et jeux multijoueur ?</p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Comment ne pas jeter son application Frontend tout les deux ans ? #LFT 24/11/23" class="post-link" href="/comment-ne-pas-jeter-son-application-frontend-tout-les-deux-ans">
+                Comment ne pas jeter son application Frontend tout les deux ans ? #LFT 24/11/23
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://twitter.com/fooragnak"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/f_dubost.jpg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Florent Dubost
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://blog.slashgear.dev/"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/a_caron.jpeg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Antoine Caron
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    November 24, 2023
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p><em>Bonnes pratiques pour la maintenance d’une application web</em></p>
+</blockquote>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Comment faire de votre vie un BlackFriday permanent #LFT 24/11/23" class="post-link" href="/comment-faire-de-votre-vie-un-blackfriday-permanent">
+                Comment faire de votre vie un BlackFriday permanent #LFT 24/11/23
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Thomas Sontag
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    November 24, 2023
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <blockquote>
+  <p>A travers ce talk, j’aimerai vous initier à l’intérêt de la négociation et les différentes techniques que l’on peut utiliser pour bien négocier.
+L’idée est de vous donner des clés simples et efficaces pour aborder une situation fréquente qui peut parfois être source de stress ou de tensions.</p>
+</blockquote>
 
                   
               </div>
@@ -485,33 +747,88 @@ et plongeons aussi dans des outils pouvant être déployés au cœur de nos clus
     <div class="post-teaser">
         
         <div class="post-img">
-            <a aria-label="Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité" href="/2022/06/13/kubecon-2022-part-1.html">
-                <img alt="Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité" src="/images/posts/2022-06-13-kubecon-2022/main.jpg">
+            <a aria-label="Swift Concurrency in a Nutshell" href="/2023/11/14/swift-concurrency-in-a-nutshell.html">
+                <img alt="Swift Concurrency in a Nutshell" src="/images/posts/2023-11-14-swift-concurrency-in-a-nutshell/thumbnail.jpg">
             </a>
         </div>
         
         <span>
           <header>
             <h1>
-              <a aria-label="Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité" class="post-link" href="/2022/06/13/kubecon-2022-part-1.html">
-                Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité
+              <a aria-label="Swift Concurrency in a Nutshell" class="post-link" href="/2023/11/14/swift-concurrency-in-a-nutshell.html">
+                Swift Concurrency in a Nutshell
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info">
-    <p class="meta">
-      Bedrock - 
-      
-      June 13, 2022
-    </p></div>
+<span class="author">
+
+    
+      <span class="name">
+        Damien Petrilli
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    November 14, 2023
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     
+                     <p>As modern apps grow in complexity and features, the need for multitasking to enhance the user experience becomes evident. Whether processing large datasets or querying multiple systems over the network, concurrency is essential.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Bedrock au Forum PHP 2023" href="/2023/10/20/forum-php-afup-2023.html">
+                <img alt="Bedrock au Forum PHP 2023" src="/images/posts/forumphp2023/header.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Bedrock au Forum PHP 2023" class="post-link" href="/2023/10/20/forum-php-afup-2023.html">
+                Bedrock au Forum PHP 2023
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Backend teams
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    October 20, 2023
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Cette année encore, Bedrock était présent au Forum PHP pour cette édition 2023.</p>
 
                   
               </div>
@@ -524,62 +841,36 @@ et plongeons aussi dans des outils pouvant être déployés au cœur de nos clus
         <span>
           <header>
             <h1>
-              <a aria-label="Bedrock's backend architecture and its front API Gateway" class="post-link" href="/2022/06/10/backend-bff-intro.html">
-                Bedrock's backend architecture and its front API Gateway
+              <a aria-label="Siteswap: jongler avec les maths #LFT 29/09/23" class="post-link" href="/siteswap-jongler-avec-les-maths">
+                Siteswap: jongler avec les maths #LFT 29/09/23
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/LarsVanCiental" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/v_claras.jpg">
+<span class="author">
+
     
-    <p class="meta">
-      Valentin CLARAS - 
-      
-      June 10, 2022
-    </p></a></div>
-
-          </header>
-          
-              <div class="excerpt">
-                  
-                     What is a BFF, and how does it simplify the development of frontend applications?
-
-                  
-              </div>
-          
+      <span class="name">
+        Damien Krieger
       </span>
-    </div>
-    
-    <div class="post-teaser">
-        
-        <span>
-          <header>
-            <h1>
-              <a aria-label="Migration progressive vers Redux Toolkit" class="post-link" href="/2022/06/08/migration-progressive-vers-redux-toolkit.html">
-                Migration progressive vers Redux Toolkit
-              </a>
-            </h1>
-            
+    </span><span class="spacer"> - </span>
 
 
-<div class="post-info"><a href="https://maximeblanc.fr" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/m_blanc.jpeg">
+
+  <span class="publication-date">
     
-    <p class="meta">
-      Maxime Blanc - 
-      
-      June 08, 2022
-    </p></a></div>
+    September 29, 2023
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Redux est le gestionnaire d’état global le plus populaire au sein de la communauté JS.
-Ses créateurs encouragent désormais l’utilisation de Redux Toolkit (RTK). Une suite d’utilitaires facilitant l’usage de Redux et réduisant notamment sa verbosité.
-Dans cette présentation, je vous propose un live coding pour migrer pas-à-pas une application React/Redux vers RTK.
+                     <blockquote>
+  <p>Présentation des concepts de base du Siteswap, la notation mathématique qui permet de décrire les patterns/figures de jonglerie. Définition, exemples basiques, limites, comment déterminer si une séquence est valide… avec démonstration en direct de certaines figures.</p>
+</blockquote>
 
                   
               </div>
@@ -604,7 +895,7 @@ Dans cette présentation, je vous propose un live coding pour migrer pas-à-pas 
     </div>
 
     <div class="page_number">
-        2 / 37
+        2 / 29
     </div>
 
     <div class="next">
@@ -619,7 +910,7 @@ Dans cette présentation, je vous propose un live coding pour migrer pas-à-pas 
         
         <!-- >> -->
         <a aria-label="Next"
-        href="/blog/page37" class="button">
+        href="/blog/page29" class="button">
             <span><i class="fas fa-angle-double-right"></i></span>
         </a>
         
@@ -770,6 +1061,22 @@ Dans cette présentation, je vous propose un live coding pour migrer pas-à-pas 
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

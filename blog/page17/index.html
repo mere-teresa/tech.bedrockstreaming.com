@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,13 +69,13 @@
     
     
 
-    <!-- seo tags -->
-    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <!-- SEO tags -->
+    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     
     <meta property="og:type" content="website" />
     
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 17 of 37 for Bedrock Tech Blog | Blog technique de Bedrock</title>
+<title>Page 17 of 29 for Bedrock Tech Blog | Blog technique de Bedrock</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Bedrock Tech Blog" />
 <meta property="og:locale" content="en_US" />
@@ -72,7 +89,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bedrock Tech Blog" />
 <script type="application/ld+json">
-{"url":"https://tech.bedrockstreaming.com/blog/page17/","@type":"WebPage","headline":"Bedrock Tech Blog","description":"Blog technique de Bedrock","@context":"https://schema.org"}</script>
+{"description":"Blog technique de Bedrock","headline":"Bedrock Tech Blog","url":"https://tech.bedrockstreaming.com/blog/page17/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -85,7 +102,7 @@
     <meta name="twitter:description" content="Creating Streaming Champions">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     <meta name="twitter:image:alt" content="Bedrock Tech Blog">
 </head>
 
@@ -96,7 +113,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -115,16 +132,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -343,30 +350,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -382,17 +365,17 @@
     <style scoped>
         
         .call-out_img {
-            background-image: url('/images/banner_xl.jpg');
+            background-image: url('/images/common/banner_xl.jpg');
         }
         
         @media screen and (max-width: 768px) {
             .call-out_img {
-                background-image: url('/images/banner_xl-medium.jpg');
+                background-image: url('/images/common/banner_xl-medium.jpg');
             }
         }
         @media screen and (max-width: 576px) {
             .call-out_img {
-                background-image: url('/images/banner_xl-small.jpg');
+                background-image: url('/images/common/banner_xl-small.jpg');
             }
         }
         
@@ -406,34 +389,43 @@
     
     <div class="post-teaser">
         
-        <div class="post-img">
-            <a aria-label="Format all the things" href="/2017/03/30/prettier.html">
-                <img alt="Format all the things" src="/images/posts/prettier/military.jpg">
-            </a>
-        </div>
-        
         <span>
           <header>
             <h1>
-              <a aria-label="Format all the things" class="post-link" href="/2017/03/30/prettier.html">
-                Format all the things
+              <a aria-label="One year of asynchronous PHP in production" class="post-link" href="/2019/10/25/one-year-of-asynchronous-code-in-production.html">
+                One year of asynchronous PHP in production
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/SuperFlaw" target="_blank" rel="noopener">
-    <p class="meta">
-      Florent Leprêtre - 
-      
-      March 30, 2017
-    </p></a></div>
+<a
+      href="https://twitter.com/b_viguier"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/b_viguier.png" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Benoit Viguier
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    October 25, 2019
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Prettier
+                     <p>Oui, il est tout à fait possible de faire de la programmation asynchrone en PHP et il existe des librairies matures pour le mettre en place dans vos projets. Oui, ça peut améliorer considérablement la performance de vos applications, mais si c’était aussi simple tout le monde le ferait déjà. Cela fait plus d’an que les équipes de 6play ont franchit le pas sur certains projets et les applications asynchrones tiennent toutes leurs promesses en production, mais la mise en place a soulevé beaucoup de questions. À quels critères se fier pour rendre une application asynchrone? Comment former les équipes sur ces nouveaux paradigmes? Comment adapter les outils existants et comment gérer ce nouveau type de charge sur les serveurs? Voici notre retour d’expérience sur le PHP asynchrone, du développement à la production, en passant par la vie de tous les jours.</p>
 
                   
               </div>
@@ -446,27 +438,34 @@
         <span>
           <header>
             <h1>
-              <a aria-label="Nouveau socle pour une nouvelle vie" class="post-link" href="/2017/03/10/confoo-2017-nouveau-socle-nouvelle-vie.html">
-                Nouveau socle pour une nouvelle vie
+              <a aria-label="M6Web Dev Facts #11" class="post-link" href="/2019/09/02/m6web-dev-facts-11.html">
+                M6Web Dev Facts #11
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/mikaelrandy" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/mikaelrandy.png">
+<span class="author">
+
     
-    <p class="meta">
-      Mikael Randy - 
-      
-      March 10, 2017
-    </p></a></div>
+      <span class="name">
+        Bedrock
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    September 02, 2019
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     A travers cette conférence, je me propose de vous tracer l’histoire de la migration de 6play (système de télévision de rattrapage du groupe M6, premier groupe de télévision privé français) d’une application monolithique vers un univers de micro-service, des avantages en terme de maintenance, d’évolution, de montée en charge, mais également des différents écueils rencontrés lors de ce changement de paradigme : caching, logging, complexité globale.
+                     <p>Reprenons un rythme soutenu des <a href="/tags/#devfacts">devfacts</a> !</p>
 
                   
               </div>
@@ -479,65 +478,34 @@
         <span>
           <header>
             <h1>
-              <a aria-label="L'équipe Player de 6play.fr au Paris Video Tech" class="post-link" href="/2017/02/20/retour-de-paris-video-tech.html">
-                L'équipe Player de 6play.fr au Paris Video Tech
+              <a aria-label="M6Web Dev Facts #10" class="post-link" href="/2019/08/08/m6web-dev-facts-10.html">
+                M6Web Dev Facts #10
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/fvieudrin" target="_blank" rel="noopener">
-    <p class="meta">
-      Frederic Vieudrin - 
-      
-      February 20, 2017
-    </p></a></div>
+<span class="author">
 
-          </header>
-          
-              <div class="excerpt">
-                  
-                     
-
-                  
-              </div>
-          
+    
+      <span class="name">
+        Bedrock
       </span>
-    </div>
-    
-    <div class="post-teaser">
-        
-        <div class="post-img">
-            <a aria-label="Get your brownfield React Native app built on demand" href="/2017/01/31/get-brownfield-react-native-app-built-on-demand.html">
-                <img alt="Get your brownfield React Native app built on demand" src="/images/posts/rn-brownfield/feature.jpg">
-            </a>
-        </div>
-        
-        <span>
-          <header>
-            <h1>
-              <a aria-label="Get your brownfield React Native app built on demand" class="post-link" href="/2017/01/31/get-brownfield-react-native-app-built-on-demand.html">
-                Get your brownfield React Native app built on demand
-              </a>
-            </h1>
-            
+    </span><span class="spacer"> - </span>
 
 
-<div class="post-info"><a href="https://twitter.com/kenny_dee" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/kenny.jpg">
+
+  <span class="publication-date">
     
-    <p class="meta">
-      Kenny Dits - 
-      
-      January 31, 2017
-    </p></a></div>
+    August 08, 2019
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     As you may know, at M6Web we decided to embrace React Native a few months ago.
-It’s a really exciting piece of software that adds a lot of value in the mobile development ecosystem.
+                     <p>Ça faisait un très très long moment ! Voici le retour des <a href="/tags.html#devfacts">devfacts</a> !</p>
 
                   
               </div>
@@ -548,35 +516,306 @@ It’s a really exciting piece of software that adds a lot of value in the mobil
     <div class="post-teaser">
         
         <div class="post-img">
-            <a aria-label="Une donnée presque parfaite sur 6play" href="/2016/11/24/une-donnee-presque-parfaite.html">
-                <img alt="Une donnée presque parfaite sur 6play" src="/images/posts/conf-afup-viguier/6play.jpg">
+            <a aria-label="React Europe 2019" href="/2019/05/27/react-europe-2019.html">
+                <img alt="React Europe 2019" src="/images/posts/react-europe-2019/brendan-church-182747-unsplash.jpg">
             </a>
         </div>
         
         <span>
           <header>
             <h1>
-              <a aria-label="Une donnée presque parfaite sur 6play" class="post-link" href="/2016/11/24/une-donnee-presque-parfaite.html">
-                Une donnée presque parfaite sur 6play
+              <a aria-label="React Europe 2019" class="post-link" href="/2019/05/27/react-europe-2019.html">
+                React Europe 2019
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/omansour" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/oliviermansour.jpg">
+<span class="author">
+
+    </span><span class="spacer"> - </span>
+
+
+
+<span class="author">
+
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
     
-    <p class="meta">
-      Olivier Mansour - 
-      
-      November 24, 2016
-    </p></a></div>
+    May 27, 2019
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Benoit Viguier, prestataire de la société Elao pour M6Web, a fait un retour d’expérience au Forum PHP de l’AFUP sur l’architecture technique mise en place autour de la mise à  disposition des données nécessaires à 6play.
+                     <p>The M6 Distribution’s (M6 Web’s new name!) front team hasn’t posted for a long time. We took part as listeners of the 5th European React Conference in Paris on May 24th and 25th. It’s an opportunity to talk about what are the last moves in the React community and at M6.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="AFUP Day Lyon 2019" class="post-link" href="/2019/05/23/afup-day.html">
+                AFUP Day Lyon 2019
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Backend teams
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    May 23, 2019
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p><a href="https://twitter.com/TechM6Web/status/1129447468851171328">TechM6WEB</a> était très fier de sponsoriser le premier <a href="https://joind.in/event/afup-day-2019-lyon-2019">AFUP DAY</a> à Lyon.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Migrating production applications from on-premise to the cloud with no downtime" class="post-link" href="/2019/03/11/Migrating-production-apps-from-on-premise-to-the-cloud-with-no-downtime.html">
+                Migrating production applications from on-premise to the cloud with no downtime
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://twitter.com/vgallissot"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Vincent Gallissot
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    March 11, 2019
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>We are migrating all our on-premise applications to AWS cloud.
+Most of them are/will be migrated to Kops-managed Kubernetes clusters, and some are/will be migrated as lambdas.
+To secure this migration, we are using HAProxy in front of both on-prem and on-AWS deployments (first only sending 1% of each application’s requests to AWS, then 5%, then 25% and so on).
+Disclaimer: This article describes a feedback from production environment. We have changed the name of applications mentioned here, but everything else is true within the limits of our knowledge.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="7 conseils pour démarrer avec Spark" class="post-link" href="/2019/01/14/7-conseils-pour-demarrer-avec-spark.html">
+                7 conseils pour démarrer avec Spark
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://twitter.com/saby_nastasia"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Nastasia Saby
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    January 14, 2019
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Je suis entrée dans le monde de la data avec Spark. 
+Il y a eu des moments clairement plus ou moins compliqués. 
+Au début, c’était le Far West : un monde inconnu et dangereux (il ne fallait pas casser la production). 
+Avec ce retour d’expérience, je vous propose de vous dire ce que j’aurais aimé qu’on me dise avant de me lancer. 
+Je promets aussi de vous parler de ce que bien heureusement mes camarades plus expérimentés m’ont aussi donné comme astuces pour m’aider dans ce grand saut. 
+Ce sera donc une entrée en matière dans le monde de Spark au travers de 7 conseils qui m’ont été ou m’auraient été bien pratiques pour démarrer.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Le Plan Copenhague : notre migration vers Le Cloud, retour d’expérience" class="post-link" href="/2018/12/20/le-plan-copenhague.html">
+                Le Plan Copenhague : notre migration vers Le Cloud, retour d’expérience
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://twitter.com/pascal_martin"
+      target="_blank"
+      rel="noopener"
+      class="author">
+
+    
+      <span class="name">
+        Pascal Martin
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    December 20, 2018
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Nous avons commencé à migrer notre plateforme 6play vers <em>Le Cloud</em> il y a un an.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Forum PHP Paris 2018" class="post-link" href="/2018/11/12/retour-forum-php-2018.html">
+                Forum PHP Paris 2018
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    November 12, 2018
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Comme tous les ans, nous étions au <a href="https://event.afup.org/forumphp2018/">Forum PHP 2018</a> organisé par l’AFUP ! Encore une fois, nous avons pu assister à plusieurs conférences et échanger avec grand nombre d’entre vous. Voici quelques mots sur celles qui nous ont le plus marqué.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Generators for Asynchronous Programming: User Manual" class="post-link" href="/2018/10/26/generators-for-async-programming-user-manual.html">
+                Generators for Asynchronous Programming: User Manual
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://twitter.com/b_viguier"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/b_viguier.png" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Benoit Viguier
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    October 26, 2018
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Les générateurs sont souvent réduits à une simplification des itérateurs, mais ils sont surtout très pratiques et performants pour executer des traitements asynchrones. Nous aborderons le fonctionnement d’un programme asynchrone, le rôle des promises, et approfondirons l’utilisation des générateurs pour simplifier l’écriture de notre code. Enfin nous détaillerons des cas pratiques « prêts à l’emploi » pour tout type d’application, avec un retour d’expérience sur ce qui a été mis en place chez M6Web.</p>
 
                   
               </div>
@@ -606,7 +845,7 @@ It’s a really exciting piece of software that adds a lot of value in the mobil
     </div>
 
     <div class="page_number">
-        17 / 37
+        17 / 29
     </div>
 
     <div class="next">
@@ -621,7 +860,7 @@ It’s a really exciting piece of software that adds a lot of value in the mobil
         
         <!-- >> -->
         <a aria-label="Next"
-        href="/blog/page37" class="button">
+        href="/blog/page29" class="button">
             <span><i class="fas fa-angle-double-right"></i></span>
         </a>
         
@@ -772,6 +1011,22 @@ It’s a really exciting piece of software that adds a lot of value in the mobil
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

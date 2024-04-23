@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,7 +69,7 @@
     
     
 
-    <!-- seo tags -->
+    <!-- SEO tags -->
     <meta property="og:image" content="https://tech.bedrockstreaming.com/images/posts/cytron/redismock.jpg">
     
     <meta property="og:type" content="website" />
@@ -61,7 +78,7 @@
 <title>Qui a bouchonné mon Redis ? | Bedrock Tech Blog</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Qui a bouchonné mon Redis ?" />
-<meta name="author" content="Cytron Team" />
+<meta name="author" content="Cytron team" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Présentation de la librairie RedisMock, un mock PHP open-source de Redis à utiliser dans vos tests fonctionnels." />
 <meta property="og:description" content="Présentation de la librairie RedisMock, un mock PHP open-source de Redis à utiliser dans vos tests fonctionnels." />
@@ -73,7 +90,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Qui a bouchonné mon Redis ?" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/redismock-qui-a-bouchonne-mon-redis"},"url":"https://tech.bedrockstreaming.com/redismock-qui-a-bouchonne-mon-redis","author":{"@type":"Person","name":"Cytron Team"},"@type":"BlogPosting","headline":"Qui a bouchonné mon Redis ?","dateModified":"2013-12-11T00:00:00+00:00","datePublished":"2013-12-11T00:00:00+00:00","description":"Présentation de la librairie RedisMock, un mock PHP open-source de Redis à utiliser dans vos tests fonctionnels.","@context":"https://schema.org"}</script>
+{"description":"Présentation de la librairie RedisMock, un mock PHP open-source de Redis à utiliser dans vos tests fonctionnels.","headline":"Qui a bouchonné mon Redis ?","dateModified":"2013-12-11T00:00:00+00:00","datePublished":"2013-12-11T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/redismock-qui-a-bouchonne-mon-redis"},"url":"https://tech.bedrockstreaming.com/redismock-qui-a-bouchonne-mon-redis","author":{"@type":"Person","name":"Cytron team"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -97,7 +114,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -116,16 +133,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -341,30 +348,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -381,17 +364,26 @@
     <div class="title-padder">
       
       <h1 id="Qui+a+bouchonn%C3%A9+mon+Redis+%3F" class="title">Qui a bouchonné mon Redis ?</h1>
-      
+      <div class="post-info">
 
 
-<div class="post-info">
-      <img alt="Author's avatar" src="/images/avatar/cytron.png">
+<span class="author">
+      <img alt="Author's avatar" src="/images/avatar/cytron.png" class="thumbnail">
     
-    <p class="meta">
-      Cytron Team - 
-      
-      December 11, 2013
-    </p></div>
+
+    
+      <span class="name">
+        Cytron team
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    December 11, 2013
+  </span>
+</div>
 
       
     </div>
@@ -700,6 +692,22 @@
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

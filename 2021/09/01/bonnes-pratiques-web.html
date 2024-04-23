@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,7 +69,7 @@
     
     
 
-    <!-- seo tags -->
+    <!-- SEO tags -->
     <meta property="og:image" content="https://tech.bedrockstreaming.com/images/posts/bonnes-pratiques-web/bedrock.jpg">
     
     <meta property="og:type" content="website" />
@@ -73,7 +90,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bonnes pratiques pour la maintenance d’une application web" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/2021/09/01/bonnes-pratiques-web.html"},"url":"https://tech.bedrockstreaming.com/2021/09/01/bonnes-pratiques-web.html","author":{"@type":"Person","name":"Antoine Caron"},"@type":"BlogPosting","headline":"Bonnes pratiques pour la maintenance d’une application web","dateModified":"2021-09-01T00:00:00+00:00","datePublished":"2021-09-01T00:00:00+00:00","description":"Comment ne pas jeter son projet au bout de 2 ans ? Retour d’expérience basé sur les bonnes pratiques appliquées à la plateforme web développée chez Bedrock Streaming.","@context":"https://schema.org"}</script>
+{"description":"Comment ne pas jeter son projet au bout de 2 ans ? Retour d’expérience basé sur les bonnes pratiques appliquées à la plateforme web développée chez Bedrock Streaming.","headline":"Bonnes pratiques pour la maintenance d’une application web","dateModified":"2021-09-01T00:00:00+00:00","datePublished":"2021-09-01T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/2021/09/01/bonnes-pratiques-web.html"},"url":"https://tech.bedrockstreaming.com/2021/09/01/bonnes-pratiques-web.html","author":{"@type":"Person","name":"Antoine Caron"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -97,7 +114,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -116,16 +133,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -341,30 +348,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -381,17 +364,30 @@
     <div class="title-padder">
       
       <h1 id="Bonnes+pratiques+pour+la+maintenance+d%27une+application+web" class="title">Bonnes pratiques pour la maintenance d'une application web</h1>
-      
+      <div class="post-info">
 
 
-<div class="post-info"><a href="https://blog.slashgear.dev/" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/acaron.jpeg">
+<a
+      href="https://blog.slashgear.dev/"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/a_caron.jpeg" class="thumbnail">
     
-    <p class="meta">
-      Antoine Caron - 
-      
-      September 01, 2021
-    </p></a></div>
+
+    
+      <span class="name">
+        Antoine Caron
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    September 01, 2021
+  </span>
+</div>
 
       
     </div>
@@ -1138,6 +1134,22 @@ Je suis cependant convaincu qu’elles peuvent probablement vous aider à identi
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

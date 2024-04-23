@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,8 +69,8 @@
     
     
 
-    <!-- seo tags -->
-    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <!-- SEO tags -->
+    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     
     <meta property="og:type" content="website" />
     
@@ -73,7 +90,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="CR Velocity Conference 2012 : Day 3 (DevOps/WebPerf)" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/cr-velocity-conference-2012-day-3-devops-webperf"},"url":"https://tech.bedrockstreaming.com/cr-velocity-conference-2012-day-3-devops-webperf","author":{"@type":"Person","name":"Kenny Dits"},"@type":"BlogPosting","headline":"CR Velocity Conference 2012 : Day 3 (DevOps/WebPerf)","dateModified":"2012-06-28T00:00:00+00:00","datePublished":"2012-06-28T00:00:00+00:00","description":"Blog technique de Bedrock","@context":"https://schema.org"}</script>
+{"description":"Blog technique de Bedrock","headline":"CR Velocity Conference 2012 : Day 3 (DevOps/WebPerf)","dateModified":"2012-06-28T00:00:00+00:00","datePublished":"2012-06-28T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/cr-velocity-conference-2012-day-3-devops-webperf"},"url":"https://tech.bedrockstreaming.com/cr-velocity-conference-2012-day-3-devops-webperf","author":{"@type":"Person","name":"Kenny Dits"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -86,7 +103,7 @@
     <meta name="twitter:description" content="Dernière journée de cette monstrueuse conférence qu’est la Vélocity Conférence.On commence dans la joie et la bonne humeur avec la “Seven Databases Song” :D[...">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     <meta name="twitter:image:alt" content="CR Velocity Conference 2012 : Day 3 (DevOps/WebPerf)">
 </head>
 
@@ -97,7 +114,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -116,16 +133,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -341,30 +348,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -381,17 +364,30 @@
     <div class="title-padder">
       
       <h1 id="CR+Velocity+Conference+2012+%3A+Day+3+%28DevOps%2FWebPerf%29" class="title">CR Velocity Conference 2012 : Day 3 (DevOps/WebPerf)</h1>
-      
+      <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/kenny_dee" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/kenny.jpg">
+<a
+      href="https://twitter.com/kenny_dee"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/k_dits.jpg" class="thumbnail">
     
-    <p class="meta">
-      Kenny Dits - 
-      
-      June 28, 2012
-    </p></a></div>
+
+    
+      <span class="name">
+        Kenny Dits
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 28, 2012
+  </span>
+</div>
 
       
     </div>
@@ -817,6 +813,22 @@ Le Job Board assez hallucinant !</p>
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

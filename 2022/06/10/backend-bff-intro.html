@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,8 +69,8 @@
     
     
 
-    <!-- seo tags -->
-    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <!-- SEO tags -->
+    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     
     <meta property="og:type" content="website" />
     
@@ -61,7 +78,7 @@
 <title>Bedrock’s backend architecture and its front API Gateway | Bedrock Tech Blog</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Bedrock’s backend architecture and its front API Gateway" />
-<meta name="author" content="Valentin CLARAS" />
+<meta name="author" content="Valentin Claras" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="What is a BFF, and how does it simplify the development of frontend applications?" />
 <meta property="og:description" content="What is a BFF, and how does it simplify the development of frontend applications?" />
@@ -73,7 +90,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bedrock’s backend architecture and its front API Gateway" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/2022/06/10/backend-bff-intro.html"},"url":"https://tech.bedrockstreaming.com/2022/06/10/backend-bff-intro.html","author":{"@type":"Person","name":"Valentin CLARAS"},"@type":"BlogPosting","headline":"Bedrock’s backend architecture and its front API Gateway","dateModified":"2022-06-10T00:00:00+00:00","datePublished":"2022-06-10T00:00:00+00:00","description":"What is a BFF, and how does it simplify the development of frontend applications?","@context":"https://schema.org"}</script>
+{"description":"What is a BFF, and how does it simplify the development of frontend applications?","headline":"Bedrock’s backend architecture and its front API Gateway","dateModified":"2022-06-10T00:00:00+00:00","datePublished":"2022-06-10T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/2022/06/10/backend-bff-intro.html"},"url":"https://tech.bedrockstreaming.com/2022/06/10/backend-bff-intro.html","author":{"@type":"Person","name":"Valentin Claras"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -86,7 +103,7 @@
     <meta name="twitter:description" content="What is a BFF, and how does it simplify the development of frontend applications?IntroductionAhoy there o/This article is the first in a series explaining th...">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     <meta name="twitter:image:alt" content="Bedrock's backend architecture and its front API Gateway">
 </head>
 
@@ -97,7 +114,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -116,16 +133,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -341,30 +348,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -381,17 +364,26 @@
     <div class="title-padder">
       
       <h1 id="Bedrock%27s+backend+architecture+and+its+front+API+Gateway" class="title">Bedrock's backend architecture and its front API Gateway</h1>
-      
+      <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/LarsVanCiental" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/v_claras.jpg">
+<span class="author">
+      <img alt="Author's avatar" src="/images/avatar/v_claras.jpg" class="thumbnail">
     
-    <p class="meta">
-      Valentin CLARAS - 
-      
-      June 10, 2022
-    </p></a></div>
+
+    
+      <span class="name">
+        Valentin Claras
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 10, 2022
+  </span>
+</div>
 
       
     </div>
@@ -517,10 +509,10 @@ We’ve been using this model for more than 3 years now. It has undergone some m
 <h2 id="notes">Notes</h2>
 
 <ol>
-  <li>For more details about microservices, you can read <a href="https://aws.amazon.com/microservices/">this piece from AWS</a></li>
+  <li>For more details about microservices, you can read <a href="https://aws.amazon.com/microservices/">this piece from AWS</a>.</li>
   <li>There are some other APIs called by our applications, such as the authentication service, but let’s not get lost into details…</li>
-  <li>There’s a lot of resources about API Gateway, here is <a href="https://www.nginx.com/learn/api-gateway/">one from nginx</a></li>
-  <li>Open API is used to define the communication standards between our BFF and the clients, more explanation on the <a href="https://www.openapis.org/">dedicated website of the organization</a></li>
+  <li>There’s a lot of resources about API Gateway, here is <a href="https://www.nginx.com/learn/api-gateway/">one from nginx</a>.</li>
+  <li>Open API is used to define the communication standards between our BFF and the clients, more explanation on the <a href="https://www.openapis.org/">dedicated website of the organization</a>.</li>
   <li>In addition to note 1, we are currently moving to the api gateway model, and some behaviors still require the application to call dedicated microservices.</li>
   <li>( in French 🇫🇷 ) <a href="https://afup.org/talks/3241-6play-api-v2-final-1-doc">An old conference</a> from 2020 given by Benoit VIGUIER, previous Team Lead in charge of the BFF, about API gateway and asynchronous development.</li>
 </ol>
@@ -528,15 +520,18 @@ We’ve been using this model for more than 3 years now. It has undergone some m
 <h2 id="from-the-same-series">From the same series</h2>
 
 <ol>
-  <li><a href="/2022/06/10/backend-bff-intro">What’s a BFF</a></li>
+  <li><a href="/2022/06/10/backend-bff-intro.html">What’s a BFF</a></li>
+  <li><a href="/2022/08/12/backend-fallbacks.html">Handling API failures in a gateway</a></li>
+  <li><a href="/2022/08/25/backend-errors-connections.html">What’s an error, and handling connection to multiple APIs</a></li>
+  <li><a href="/2022/09/02/backend-circuit-breaker.html">Using a circuit breaker</a></li>
 </ol>
 
 <hr />
 <p>In the meantime, feel free to have a look at other articles available on this blog:</p>
 
 <ul>
-  <li>🇺🇸 <a href="/2022/05/31/github-action-pr-size-labeler">Announcing BedrockStreaming/pr-size-labeler github action</a></li>
-  <li>🇫🇷 <a href="/2022/05/30/afup-day-lille-2022">Retour sur l’AFUP Day Lille 2022</a></li>
+  <li>🇺🇸 <a href="/2022/05/31/github-action-pr-size-labeler.html">Announcing BedrockStreaming/pr-size-labeler github action</a></li>
+  <li>🇫🇷 <a href="/2022/05/30/afup-day-lille-2022.html">Retour sur l’AFUP Day Lille 2022</a></li>
 </ul>
 
     
@@ -819,6 +814,22 @@ We’ve been using this model for more than 3 years now. It has undergone some m
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

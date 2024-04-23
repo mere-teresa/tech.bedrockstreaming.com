@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,13 +69,13 @@
     
     
 
-    <!-- seo tags -->
-    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <!-- SEO tags -->
+    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     
     <meta property="og:type" content="website" />
     
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Page 11 of 37 for Bedrock Tech Blog | Blog technique de Bedrock</title>
+<title>Page 11 of 29 for Bedrock Tech Blog | Blog technique de Bedrock</title>
 <meta name="generator" content="Jekyll v4.2.2" />
 <meta property="og:title" content="Bedrock Tech Blog" />
 <meta property="og:locale" content="en_US" />
@@ -72,7 +89,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bedrock Tech Blog" />
 <script type="application/ld+json">
-{"url":"https://tech.bedrockstreaming.com/blog/page11/","@type":"WebPage","headline":"Bedrock Tech Blog","description":"Blog technique de Bedrock","@context":"https://schema.org"}</script>
+{"description":"Blog technique de Bedrock","headline":"Bedrock Tech Blog","url":"https://tech.bedrockstreaming.com/blog/page11/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -85,7 +102,7 @@
     <meta name="twitter:description" content="Creating Streaming Champions">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/banner_xl.jpg">
+    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/common/banner_xl.jpg">
     <meta name="twitter:image:alt" content="Bedrock Tech Blog">
 </head>
 
@@ -96,7 +113,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -115,16 +132,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -343,30 +350,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -382,17 +365,17 @@
     <style scoped>
         
         .call-out_img {
-            background-image: url('/images/banner_xl.jpg');
+            background-image: url('/images/common/banner_xl.jpg');
         }
         
         @media screen and (max-width: 768px) {
             .call-out_img {
-                background-image: url('/images/banner_xl-medium.jpg');
+                background-image: url('/images/common/banner_xl-medium.jpg');
             }
         }
         @media screen and (max-width: 576px) {
             .call-out_img {
-                background-image: url('/images/banner_xl-small.jpg');
+                background-image: url('/images/common/banner_xl-small.jpg');
             }
         }
         
@@ -406,66 +389,38 @@
     
     <div class="post-teaser">
         
-        <div class="post-img">
-            <a aria-label="ScalaIO Lyon 2019" href="/2019/11/25/retour-scalaio.html">
-                <img alt="ScalaIO Lyon 2019" src="/images/posts/scalaio2019/header.jpg">
-            </a>
-        </div>
-        
         <span>
           <header>
             <h1>
-              <a aria-label="ScalaIO Lyon 2019" class="post-link" href="/2019/11/25/retour-scalaio.html">
-                ScalaIO Lyon 2019
+              <a aria-label="Bedrock Dev Facts #17" class="post-link" href="/2022/07/22/bedrock-dev-facts-17.html">
+                Bedrock Dev Facts #17
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info">
-    <p class="meta">
-      
-      
-      November 25, 2019
-    </p></div>
+<span class="author">
 
-          </header>
-          
-              <div class="excerpt">
-                  
-                     Nous étions à la ScalaIO 2019 organisée à Lyon ! 
-Nous avons assisté à de très bonnes conférences. Voici quelques mots sur les interventions qui nous ont le plus marquées cette année.
-
-                  
-              </div>
-          
-      </span>
-    </div>
     
-    <div class="post-teaser">
-        
-        <span>
-          <header>
-            <h1>
-              <a aria-label="Machine learning sans magie et sans s'arracher les cheveux" class="post-link" href="/2019/11/14/machine-learning-sans-magie-et-sans-sarracher-les-cheveux.html">
-                Machine learning sans magie et sans s'arracher les cheveux
-              </a>
-            </h1>
-            
+      <span class="name">
+        Bedrock
+      </span>
+    </span><span class="spacer"> - </span>
 
 
-<div class="post-info"><a href="https://twitter.com/saby_nastasia" target="_blank" rel="noopener">
-    <p class="meta">
-      Nastasia Saby - 
-      
-      November 14, 2019
-    </p></a></div>
+
+  <span class="publication-date">
+    
+    July 22, 2022
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Comprendre le machine learning en prenant l’exemple d’un barbecue.
+                     <p>L’été arrive, les vacances, le repos.<br />
+Et vu les derniers devfacts des équipes Bedrock, il semblerait qu’il soit temps.</p>
 
                   
               </div>
@@ -476,34 +431,48 @@ Nous avons assisté à de très bonnes conférences. Voici quelques mots sur les
     <div class="post-teaser">
         
         <div class="post-img">
-            <a aria-label="Forum PHP Paris 2019" href="/2019/11/04/retour-forum-php-2019.html">
-                <img alt="Forum PHP Paris 2019" src="/images/posts/forumphp2019/header.jpg">
+            <a aria-label="Encrypt AWS AMIs: one way to do it wrong" href="/2022/07/08/encrypt-aws-amis.html">
+                <img alt="Encrypt AWS AMIs: one way to do it wrong" src="/images/posts/2022-07-08-encrypt-aws-amis/encrypt-aws-amis.png">
             </a>
         </div>
         
         <span>
           <header>
             <h1>
-              <a aria-label="Forum PHP Paris 2019" class="post-link" href="/2019/11/04/retour-forum-php-2019.html">
-                Forum PHP Paris 2019
+              <a aria-label="Encrypt AWS AMIs: one way to do it wrong" class="post-link" href="/2022/07/08/encrypt-aws-amis.html">
+                Encrypt AWS AMIs: one way to do it wrong
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/pascal_martin" target="_blank" rel="noopener">
-    <p class="meta">
-      Pascal Martin - 
-      
-      November 04, 2019
-    </p></a></div>
+<a
+      href="https://twitter.com/TanguyFalconnet"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/t_falconnet.jpg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Tanguy Falconnet
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    July 08, 2022
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Comme tous les ans, nous étions au Forum PHP 2019 organisé par l’AFUP ! 
-Nous avons assisté à de très bonnes conférences et échangé avec beaucoup d’entre vous. Voici quelques mots sur les interventions qui nous ont le plus marquées cette année.
+                     <p>At Bedrock, we build our own privately shared AMIs (<a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html">Amazon Machine Images</a>) for different parts of our stack: kubernetes platform, vod platform, etc. We build those AMIs to optimize kernel parameters,to embed some tools, and more. We have been using Packer for a couple of years, and everything has been working just fine.</p>
 
                   
               </div>
@@ -516,26 +485,232 @@ Nous avons assisté à de très bonnes conférences et échangé avec beaucoup d
         <span>
           <header>
             <h1>
-              <a aria-label="Une application résiliente, dans un monde partiellement dégradé" class="post-link" href="/2019/10/25/une-application-resiliente-dans-un-monde-partiellement-degrade-pascal-martin.html">
-                Une application résiliente, dans un monde partiellement dégradé
+              <a aria-label="Debugging and reviewing your Android dependencies with apktool" class="post-link" href="/2022/06/20/android-apktool-decompiling.html">
+                Debugging and reviewing your Android dependencies with apktool
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/pascal_martin" target="_blank" rel="noopener">
-    <p class="meta">
-      Pascal Martin - 
-      
-      October 25, 2019
-    </p></a></div>
+<a
+      href="https://baptiste.candellier.me"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="https://s.gravatar.com/avatar/c638445b4e00f76960bf7ee2275d7014?s=80" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Baptiste Candellier
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 20, 2022
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Dans un monde en perpétuelle évolution, pouvons-nous toujours atteindre « four-nines » de disponibilité ?
-Cloud et Kubernetes. APIs et Microservices… Nos architectures s’enrichissent et se complexifient. Au prix d’une certaine fragilité ?
+                     <p>If you maintain an Android application, you might be relying on performance monitoring SDKs like <a href="https://firebase.google.com/docs/perf-mon">Firebase Performance</a> or <a href="https://newrelic.com/products/mobile-monitoring">New Relic</a>, to name a couple. These plugins usually have a light setup process—just apply a Gradle plugin, and they provide the ability to collect statistics about every network call and database query in your app automatically.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…" href="/2022/06/16/kubecon-2022-part-4.html">
+                <img alt="Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…" src="/images/posts/2022-06-13-kubecon-2022/part4.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…" class="post-link" href="/2022/06/16/kubecon-2022-part-4.html">
+                Bedrock à la Kubecon 2022, 4ème partie : chaos, résilience, ressenti global et conclusion générale…
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Bedrock
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 16, 2022
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Pour terminer cette série, un ou deux sujets divers que nous n’avons pas regroupé dans les trois articles précédents
+(<a href="/2022/06/13/kubecon-2022-part-1.html">les performances applicatives et la scalabilité</a>, 
+<a href="/2022/06/14/kubecon-2022-part-2.html">les performances bas niveau, le système et le réseau</a>,
+<a href="/2022/06/15/kubecon-2022-part-3.html">la dev XP, l’outillage, la CI/CD et l’observabilité</a>), 
+puis une conclusion globale avec ce que nous avons retenu de cette KubeCon Europe 2022.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Bedrock à la Kubecon 2022, 3ème partie : Dev XP, outillage, CI/CD, observabilité…" href="/2022/06/15/kubecon-2022-part-3.html">
+                <img alt="Bedrock à la Kubecon 2022, 3ème partie : Dev XP, outillage, CI/CD, observabilité…" src="/images/posts/2022-06-13-kubecon-2022/part3.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Bedrock à la Kubecon 2022, 3ème partie : Dev XP, outillage, CI/CD, observabilité…" class="post-link" href="/2022/06/15/kubecon-2022-part-3.html">
+                Bedrock à la Kubecon 2022, 3ème partie : Dev XP, outillage, CI/CD, observabilité…
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Bedrock
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 15, 2022
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Pour notre troisième article de cette série sur ce que nous avons retenu de la KubeCon Europe 2022, après 
+<a href="/2022/06/13/kubecon-2022-part-1.html">les performances applicatives et la scalabilité</a> et 
+<a href="/2022/06/14/kubecon-2022-part-2.html">les performances bas niveau, le système et le réseau</a>, 
+passons à la Developper eXperience, à l’outillage, à la CI/CD, aux rollback, à l’observabilité et aux incidents !</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Bedrock à la Kubecon 2022, 2nde partie : performances, système et réseau" href="/2022/06/14/kubecon-2022-part-2.html">
+                <img alt="Bedrock à la Kubecon 2022, 2nde partie : performances, système et réseau" src="/images/posts/2022-06-13-kubecon-2022/main.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Bedrock à la Kubecon 2022, 2nde partie : performances, système et réseau" class="post-link" href="/2022/06/14/kubecon-2022-part-2.html">
+                Bedrock à la Kubecon 2022, 2nde partie : performances, système et réseau
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Bedrock
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 14, 2022
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Pour ce second article de synthèse de la KubeCon Europe 2022, continuons sur le thème des performances, peut-être plus bas niveau,
+et plongeons aussi dans des outils pouvant être déployés au cœur de nos clusters !</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité" href="/2022/06/13/kubecon-2022-part-1.html">
+                <img alt="Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité" src="/images/posts/2022-06-13-kubecon-2022/main.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité" class="post-link" href="/2022/06/13/kubecon-2022-part-1.html">
+                Bedrock à la kubecon 2022, 1ere partie : performances applicatives et scalabilité
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<span class="author">
+
+    
+      <span class="name">
+        Bedrock
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 13, 2022
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p><img src="/images/posts/2022-06-13-kubecon-2022/part1.jpg" alt="&quot;KubeCon 2022 part1&quot;" /></p>
 
                   
               </div>
@@ -548,27 +723,149 @@ Cloud et Kubernetes. APIs et Microservices… Nos architectures s’enrichissent
         <span>
           <header>
             <h1>
-              <a aria-label="One year of asynchronous PHP in production" class="post-link" href="/2019/10/25/one-year-of-asynchronous-code-in-production.html">
-                One year of asynchronous PHP in production
+              <a aria-label="Bedrock's backend architecture and its front API Gateway" class="post-link" href="/2022/06/10/backend-bff-intro.html">
+                Bedrock's backend architecture and its front API Gateway
               </a>
             </h1>
-            
+            <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/b_viguier" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/b_viguier.png">
+<span class="author">
+      <img alt="Author's avatar" src="/images/avatar/v_claras.jpg" class="thumbnail">
     
-    <p class="meta">
-      Benoit Viguier - 
-      
-      October 25, 2019
-    </p></a></div>
+
+    
+      <span class="name">
+        Valentin Claras
+      </span>
+    </span><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 10, 2022
+  </span>
+</div>
 
           </header>
           
               <div class="excerpt">
                   
-                     Oui, il est tout à fait possible de faire de la programmation asynchrone en PHP et il existe des librairies matures pour le mettre en place dans vos projets. Oui, ça peut améliorer considérablement la performance de vos applications, mais si c’était aussi simple tout le monde le ferait déjà. Cela fait plus d’an que les équipes de 6play ont franchit le pas sur certains projets et les applications asynchrones tiennent toutes leurs promesses en production, mais la mise en place a soulevé beaucoup de questions. À quels critères se fier pour rendre une application asynchrone? Comment former les équipes sur ces nouveaux paradigmes? Comment adapter les outils existants et comment gérer ce nouveau type de charge sur les serveurs? Voici notre retour d’expérience sur le PHP asynchrone, du développement à la production, en passant par la vie de tous les jours.
+                     <p>What is a BFF, and how does it simplify the development of frontend applications?</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Migration progressive vers Redux Toolkit" class="post-link" href="/2022/06/08/migration-progressive-vers-redux-toolkit.html">
+                Migration progressive vers Redux Toolkit
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://maximeblanc.fr"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/m_blanc.jpeg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Maxime Blanc
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 08, 2022
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Redux est le gestionnaire d’état global le plus populaire au sein de la communauté JS.
+Ses créateurs encouragent désormais l’utilisation de Redux Toolkit (RTK). Une suite d’utilitaires facilitant l’usage de Redux et réduisant notamment sa verbosité.
+Dans cette présentation, je vous propose un live coding pour migrer pas-à-pas une application React/Redux vers RTK.</p>
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Comment ne pas jeter son application Frontend tous les deux ans ?" class="post-link" href="/2022/06/08/comment-ne-pas-jeter-votre-application.html">
+                Comment ne pas jeter son application Frontend tous les deux ans ?
+              </a>
+            </h1>
+            <div class="post-info">
+
+
+<a
+      href="https://blog.slashgear.dev/"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/a_caron.jpeg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Antoine Caron
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+<a
+      href="https://twitter.com/fooragnak"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/f_dubost.jpg" class="thumbnail">
+    
+
+    
+      <span class="name">
+        Florent Dubost
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    June 08, 2022
+  </span>
+</div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     <p>Bonnes pratiques pour la maintenance d’une application web
+Refaire son front tous les 2 ans, c’est devenu une pratique plutôt courante dans tous les projets. Tous ? Non, chez Bedrock streaming, nous avons choisi de rester sur la même codebase et ça depuis plus de 7 ans! En plus, ce n’est pas une petite application puisqu’il s’agit de 6play et de salto.
+Vous pourriez vous dire: “Oh les pauvres, maintenir une application vieille de presque 10 ans ça doit être un enfer !”
+Rassurez-vous, ce n’est pas le cas ! Nous avons tous travaillé sur des projets bien moins vieux mais sur lesquels le développement de nouvelles fonctionnalités était bien plus pénible.</p>
 
                   
               </div>
@@ -598,7 +895,7 @@ Cloud et Kubernetes. APIs et Microservices… Nos architectures s’enrichissent
     </div>
 
     <div class="page_number">
-        11 / 37
+        11 / 29
     </div>
 
     <div class="next">
@@ -613,7 +910,7 @@ Cloud et Kubernetes. APIs et Microservices… Nos architectures s’enrichissent
         
         <!-- >> -->
         <a aria-label="Next"
-        href="/blog/page37" class="button">
+        href="/blog/page29" class="button">
             <span><i class="fas fa-angle-double-right"></i></span>
         </a>
         
@@ -764,6 +1061,22 @@ Cloud et Kubernetes. APIs et Microservices… Nos architectures s’enrichissent
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

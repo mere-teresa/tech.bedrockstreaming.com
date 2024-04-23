@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,7 +69,7 @@
     
     
 
-    <!-- seo tags -->
+    <!-- SEO tags -->
     <meta property="og:image" content="https://tech.bedrockstreaming.com/images/posts/2021-11-18-hsdo/hsdo.png">
     
     <meta property="og:type" content="website" />
@@ -73,7 +90,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="More efficient Load Balancing and Caching at AWS, using Consistent Hashing and HAProxy" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/2021/11/18/hsdo.html"},"url":"https://tech.bedrockstreaming.com/2021/11/18/hsdo.html","author":{"@type":"Person","name":"Tanguy Falconnet"},"@type":"BlogPosting","headline":"More efficient Load Balancing and Caching at AWS, using Consistent Hashing and HAProxy","dateModified":"2021-11-18T00:00:00+00:00","datePublished":"2021-11-18T00:00:00+00:00","description":"Why and how, we implement consistent hashing based load balancing at AWS with HSDO","@context":"https://schema.org"}</script>
+{"description":"Why and how, we implement consistent hashing based load balancing at AWS with HSDO","headline":"More efficient Load Balancing and Caching at AWS, using Consistent Hashing and HAProxy","dateModified":"2021-11-18T00:00:00+00:00","datePublished":"2021-11-18T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://tech.bedrockstreaming.com/2021/11/18/hsdo.html"},"url":"https://tech.bedrockstreaming.com/2021/11/18/hsdo.html","author":{"@type":"Person","name":"Tanguy Falconnet"},"@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -97,7 +114,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -116,16 +133,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -341,30 +348,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -381,17 +364,30 @@
     <div class="title-padder">
       
       <h1 id="More+efficient+Load+Balancing+and+Caching+at+AWS%2C+using+Consistent+Hashing+and+HAProxy" class="title">More efficient Load Balancing and Caching at AWS, using Consistent Hashing and HAProxy</h1>
-      
+      <div class="post-info">
 
 
-<div class="post-info"><a href="https://twitter.com/TanguyFalconnet" target="_blank" rel="noopener">
-      <img alt="Author's avatar" src="/images/avatar/t_falconnet.jpg">
+<a
+      href="https://twitter.com/TanguyFalconnet"
+      target="_blank"
+      rel="noopener"
+      class="author">
+      <img alt="Author's avatar" src="/images/avatar/t_falconnet.jpg" class="thumbnail">
     
-    <p class="meta">
-      Tanguy Falconnet - 
-      
-      November 18, 2021
-    </p></a></div>
+
+    
+      <span class="name">
+        Tanguy Falconnet
+      </span>
+    </a><span class="spacer"> - </span>
+
+
+
+  <span class="publication-date">
+    
+    November 18, 2021
+  </span>
+</div>
 
       
     </div>
@@ -822,6 +818,22 @@ This list is stored in DynamoDB.</p>
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 

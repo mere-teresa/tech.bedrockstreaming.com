@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
 
-    <!-- Theme Mode-->
     
+    <!-- Theme Mode -->
     <script>
         const isAutoTheme = true;
         document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
@@ -23,24 +23,41 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 
-    <!--Favicon-->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 
     
 
-    <!-- KaTeX 0.15.2 -->
     
+    <!-- KaTeX 0.15.2 -->
     <script defer src="/assets/js/vendor/katex.min.js"></script>
     <script defer src="/assets/js/vendor/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
     
 
-    <!-- Mermaid 8.13.10 -->
     
+    <!-- Mermaid 8.13.10 -->
     <script defer src="/assets/js/vendor/mermaid.min.js" onload="mermaid.initialize({startOnLoad:true});"></script>
     
 
     <!-- Simple Jekyll Search 1.9.1 -->
     <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://bedrockstreaming.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src='//cdn.matomo.cloud/bedrockstreaming.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    
 
     <!-- Google Analytics / Cookie Consent -->
     <script>
@@ -52,8 +69,8 @@
     
     
 
-    <!-- seo tags -->
-    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/travel.jpg">
+    <!-- SEO tags -->
+    <meta property="og:image" content="https://tech.bedrockstreaming.com/images/common/travel.jpg">
     
     <meta property="og:type" content="website" />
     
@@ -70,7 +87,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="OSS" />
 <script type="application/ld+json">
-{"url":"https://tech.bedrockstreaming.com/oss/","@type":"WebPage","headline":"OSS","description":"Blog technique de Bedrock","@context":"https://schema.org"}</script>
+{"description":"Blog technique de Bedrock","headline":"OSS","url":"https://tech.bedrockstreaming.com/oss/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -83,7 +100,7 @@
     <meta name="twitter:description" content="# Open sourceAt [Bedrock](https://www.bedrockstreaming.com/) we strongly believe in open source. We push our team members to publish their work and demand th...">
     
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/travel.jpg">
+    <meta name="twitter:image" content="https://tech.bedrockstreaming.com/images/common/travel.jpg">
     <meta name="twitter:image:alt" content="OSS">
 </head>
 
@@ -94,7 +111,7 @@
 	<div class="branding">
         
 		<a href="/">
-			<img alt="logo img" class="avatar" src="/images/br-site-logo.jpg" />
+			<img alt="logo img" class="avatar" src="/images/common/br-site-logo.jpg" />
 		</a>
         
         <a class="site-title" aria-label="Bedrock Tech Blog" href="/">
@@ -113,16 +130,6 @@
         
 
         
-            
-            
-        
-            
-            <li class="separator"> | </li>
-            <li>
-                <a class="clear" aria-label="About" title="About" href="/about/">
-                     About 
-                </a>
-            </li>
             
             
         
@@ -341,30 +348,6 @@
             
             
         
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
-            
-            
-        
         
         
         <li class="separator"> | </li>
@@ -378,7 +361,7 @@
     <div class="content">
       <article class="feature-image">
 
-  <header id="main" style="background-image: url('/images/travel.jpg')">
+  <header id="main" style="background-image: url('/images/common/travel.jpg')">
     <div class="title-padder">
       
         <h1 id="OSS" class="title"> OSS</h1>
@@ -411,6 +394,7 @@
   <li><a href="https://github.com/BedrockStreaming/SeyrenLight">SeyrenLight</a> is an other monitoring tool (buildwall) that allow to quickly show failing <a href="https://github.com/scobal/seyren">Seyren</a> checks</li>
   <li><a href="https://github.com/BedrockStreaming/VigoJS">VigoJS</a> is a (small) Javascript tool using CasperJS and PhantomJS to make easily functional tests on web applications</li>
   <li><a href="https://github.com/marketplace/actions/pull-request-auto-size-labeler">BedrockStreaming/pr-size-labeler</a> is a configurable Github action that dynamically adds size labels to <em>Pull Requests</em> based on the size of the diff and the number of modified files.</li>
+  <li><a href="https://github.com/BedrockStreaming/prescaling-exporter">BedrockStreaming/prescaling-exporter</a> is a prometheus exporter which allows applications to be staggered over time or an event with a multiplier.</li>
 </ul>
 
 <h1 id="bundle-and-libs">Bundle and libs</h1>
@@ -452,6 +436,7 @@
 
 <ul>
   <li><a href="https://github.com/actions-runner-controller/actions-runner-controller">actions-runner-controller/actions-runner-controller</a>: <a href="https://github.com/actions-runner-controller/actions-runner-controller/pull/1237">#1237</a></li>
+  <li><a href="https://github.com/apache/superset">apache/superset</a>: <a href="https://github.com/apache/superset/pull/20567">#20567</a> - <a href="https://github.com/apache/superset/pull/20883">#20883</a> - <a href="https://github.com/apache/superset/pull/20931">#20931</a> - <a href="https://github.com/apache/superset/pull/21536">#21536</a></li>
   <li><a href="https://github.com/atoum/atoum">atoum/atoum</a>: <a href="https://github.com/atoum/atoum/pull/200">#200</a> - <a href="https://github.com/atoum/atoum/pull/210">#210</a></li>
   <li><a href="https://github.com/atoum/AtoumBundle">atoum/AtoumBundle</a>: <a href="https://github.com/atoum/AtoumBundle/pull/16">#16</a> - <a href="https://github.com/atoum/AtoumBundle/pull/27">#27</a> - <a href="https://github.com/atoum/AtoumBundle/pull/34">#34</a> - <a href="https://github.com/atoum/AtoumBundle/pull/35">#35</a> - <a href="https://github.com/atoum/AtoumBundle/pull/44">#44</a> - <a href="https://github.com/atoum/AtoumBundle/pull/47">#47</a> - <a href="https://github.com/atoum/AtoumBundle/pull/48">#48</a> - <a href="https://github.com/atoum/AtoumBundle/pull/52">#52</a> - <a href="https://github.com/atoum/AtoumBundle/pull/53">#53</a> - <a href="https://github.com/atoum/AtoumBundle/pull/56">#56</a></li>
   <li><a href="https://github.com/Checkmarx/kics">Checkmarx/kics</a>: <a href="https://github.com/Checkmarx/kics/pull/5036">#5036</a> - <a href="https://github.com/Checkmarx/kics/pull/4984">#4984</a> - <a href="https://github.com/Checkmarx/kics/pull/4839">#4839</a></li>
@@ -461,7 +446,7 @@
   <li><a href="https://github.com/doctrine/DoctrineBundle">doctrine/DoctrineBundle</a>: <a href="https://github.com/doctrine/DoctrineBundle/pull/159">#159</a></li>
   <li><a href="https://github.com/elastic/elasticsearch-php">elastic/elasticsearch-php</a>: <a href="https://github.com/elastic/elasticsearch-php/pull/149">#149</a> - <a href="https://github.com/elastic/elasticsearch-php/pull/506">#506</a> - <a href="https://github.com/elastic/elasticsearch-php/pull/507">#507</a></li>
   <li><a href="https://github.com/FriendsOfSymfony/FOSRestBundle">FriendsOfSymfony/FOSRestBundle</a>: <a href="https://github.com/FriendsOfSymfony/FOSRestBundle/pull/1110">#1110</a></li>
-  <li><a href="https://github.com/google/shaka-player">google/shaka-player</a>: <a href="https://github.com/google/shaka-player/pull/1962">#1962</a> - <a href="https://github.com/google/shaka-player/pull/2034">#2034</a> - <a href="https://github.com/google/shaka-player/pull/2750">#2750</a> - <a href="https://github.com/google/shaka-player/pull/2855">#2855</a> - <a href="https://github.com/google/shaka-player/pull/3276">#3276</a> - <a href="https://github.com/google/shaka-player/pull/3301">#3301</a> - <a href="https://github.com/google/shaka-player/pull/3358">#3358</a> - <a href="https://github.com/google/shaka-player/pull/3399">#3399</a> - <a href="https://github.com/google/shaka-player/pull/3754">#3754</a> - <a href="https://github.com/google/shaka-player/pull/3776">#3776</a></li>
+  <li><a href="https://github.com/google/shaka-player">google/shaka-player</a>: <a href="https://github.com/google/shaka-player/pull/1962">#1962</a> - <a href="https://github.com/google/shaka-player/pull/2034">#2034</a> - <a href="https://github.com/google/shaka-player/pull/2750">#2750</a> - <a href="https://github.com/google/shaka-player/pull/2855">#2855</a> - <a href="https://github.com/google/shaka-player/pull/3276">#3276</a> - <a href="https://github.com/google/shaka-player/pull/3301">#3301</a> - <a href="https://github.com/google/shaka-player/pull/3358">#3358</a> - <a href="https://github.com/google/shaka-player/pull/3399">#3399</a> - <a href="https://github.com/google/shaka-player/pull/3754">#3754</a> - <a href="https://github.com/google/shaka-player/pull/3776">#3776</a> - <a href="https://github.com/shaka-project/shaka-player/pull/4461">#4461</a> - <a href="https://github.com/shaka-project/shaka-player/pull/5149">#5149</a></li>
   <li><a href="https://github.com/grafana/grafana">grafana/grafana</a>: <a href="https://github.com/grafana/grafana/pull/974">#974</a></li>
   <li><a href="https://github.com/guzzle/guzzle3">guzzle/guzzle3</a>: <a href="https://github.com/guzzle/guzzle3/pull/38">#38</a></li>
   <li><a href="https://github.com/haya14busa/action-bumpr">haya14busa/action-bumpr</a>: <a href="https://github.com/haya14busa/action-bumpr/pull/29">#29</a></li>
@@ -482,7 +467,7 @@
   <li><a href="https://github.com/symfony/symfony-docs">symfony/symfony-docs</a>: <a href="https://github.com/symfony/symfony-docs/pull/4300">#4300</a></li>
   <li><a href="https://github.com/variantdev/chartify">variantdev/chartify</a>: <a href="https://github.com/variantdev/chartify/pull/17">#17</a></li>
   <li><a href="https://github.com/Versent/saml2aws">Versent/saml2aws</a>: <a href="https://github.com/Versent/saml2aws/pull/272">#272</a></li>
-  <li><a href="https://github.com/video-dev/hls.js">video-dev/hls.js</a>: <a href="https://github.com/video-dev/hls.js/pull/1907">#1907</a> - <a href="https://github.com/video-dev/hls.js/pull/2606">#2606</a></li>
+  <li><a href="https://github.com/video-dev/hls.js">video-dev/hls.js</a>: <a href="https://github.com/video-dev/hls.js/pull/1907">#1907</a> - <a href="https://github.com/video-dev/hls.js/pull/2606">#2606</a> - <a href="https://github.com/video-dev/hls.js/pull/4474">#4474</a></li>
   <li><a href="https://github.com/vuejs/vue-router">vuejs/vue-router</a>: <a href="https://github.com/vuejs/vue-router/pull/2411">#2411</a></li>
   <li><a href="https://github.com/vuejs/vuex">vuejs/vuex</a>: <a href="https://github.com/vuejs/vuex/pull/1412">#1412</a></li>
   <li><a href="https://github.com/webpack/webpack">webpack/webpack</a>: <a href="https://github.com/webpack/webpack/pull/5862">#5862</a></li>
@@ -659,6 +644,22 @@
 
     
 
+    
+        
+        
+        
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UCSwvTdCWHS6ulRaIqdk7lNw"
+               title="Follow on Youtube"
+               target="_blank"
+               rel="noopener">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+            </a>
+        </li>
     
 
 
